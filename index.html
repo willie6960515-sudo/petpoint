@@ -253,7 +253,7 @@ body[data-view=points] .batch-bar input{min-height:25px;padding:3px}
 @media(max-width:999px){#dialog .personal-hero.has-home{grid-template-columns:minmax(0,1fr) 180px;gap:8px}.has-home .home-info h2{font-size:18px}.has-home .home-info .personal-experience{padding:7px}.has-home .home-info .detail-wallet{padding:6px 3px}.has-home .home-info .detail-wallet strong{font-size:19px}.yard-caption{font-size:10px;padding:2px 5px}.yard-empty-note{font-size:10px;padding:3px 6px}}
 @media(max-width:700px){#dialog .personal-hero.has-home{grid-template-columns:minmax(0,1fr);gap:8px}.pet-home-scene.home-yard{width:100%;max-width:none}.has-home .home-info{max-height:none;overflow:visible;display:grid;grid-template-columns:1fr 1fr;gap:5px 12px;padding:4px}.has-home .home-info h2,.has-home .home-info .personal-level{grid-column:1 / -1}.has-home .home-info .personal-experience{grid-column:1;margin:0}.has-home .home-info .detail-wallet{grid-column:2;grid-row:3;margin:0;align-self:start}.has-home .home-info>p,.has-home .home-info>.button-row,.has-home .home-info>.companion-detail-footer{grid-column:1 / -1;margin:3px 0}.has-home .home-info .button-row{flex-direction:row}.has-home .home-info .companion-detail-footer{flex-direction:row;align-items:center;justify-content:space-between}.has-home .home-info .companion-detail-footer>span{flex:1}.home-expanded .home-yard{width:100%}#dialog:has(.has-home) .child-dialog-bottom .button{min-width:0;flex:1;font-size:14px}.yard-empty-note{font-size:9px}.yard-caption{font-size:9px}.yard-item-label{font-size:10px}}
 .yard-level{position:absolute;top:100%;left:50%;transform:translateX(-50%);font-size:8px;line-height:11px;letter-spacing:0;color:#684b25;background:#fff7dfdd;border-radius:6px;padding:0 3px;white-space:nowrap;pointer-events:none}.yard-item-label{bottom:12%}
-#rankingView>.help{flex:none;margin:0 0 2px}#rankingView .pager{padding:4px 0 7px}.ranking-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;align-items:start;flex:1;min-height:0;gap:8px}.ranking-grid .panel{min-width:0;padding:6px 10px}.ranking-grid .panel h2{margin:0 0 3px;font-size:16px}.ranking-grid table{table-layout:fixed}.ranking-grid th:first-child{width:19%}.ranking-grid th:last-child{width:29%}@media(max-width:560px){.ranking-grid{grid-template-columns:minmax(0,1fr)}#rankingView>.help{font-size:11px;line-height:1.3}}.ranking-grid table{width:100%;border-collapse:collapse;text-align:left}.ranking-grid th,.ranking-grid td{height:30px;padding:2px 4px;border-bottom:1px solid var(--line);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:clamp(11px,2.7vw,15px)}.ranking-grid td:last-child,.ranking-grid th:last-child{text-align:right;font-variant-numeric:tabular-nums}</style></head>
+#rankingView>.help{flex:none;margin:0 0 2px}#rankingView .pager{padding:4px 0 7px;flex-wrap:wrap;gap:4px 10px}.ranking-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;align-items:start;flex:1;min-height:0;gap:8px}.ranking-grid .panel{min-width:0;padding:6px 10px}.ranking-grid .panel h2{margin:0 0 3px;font-size:16px}.ranking-grid table{table-layout:fixed}.ranking-grid th:first-child{width:19%}.ranking-grid th:last-child{width:29%}@media(max-width:560px){.ranking-grid{grid-template-columns:minmax(0,1fr)}#rankingView>.help{font-size:11px;line-height:1.3}}.ranking-grid table{width:100%;border-collapse:collapse;text-align:left}.ranking-grid th,.ranking-grid td{height:30px;padding:2px 4px;border-bottom:1px solid var(--line);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:clamp(11px,2.7vw,15px)}.ranking-grid td:last-child,.ranking-grid th:last-child{text-align:right;font-variant-numeric:tabular-nums}</style></head>
 <body>
 <aside class="sidebar"><a class="brand" href="#"><span class="brand-icon">✦</span><span>星芽學園<small>精靈與六家冒險</small></span></a><span class="side-label">班級日常</span><nav id="nav"><button data-view="points" class="nav-item active">✦　精靈廣場</button><button data-view="pets" class="nav-item">✧　精靈時間</button><button data-view="lottery" class="nav-item">🎯　魔法抽籤</button><button data-view="quiet" class="nav-item">☾　安眠結界</button><button data-view="ranking" class="nav-item">☆　累計排行榜</button><button data-view="history" class="nav-item">◷　操作紀錄</button><button data-view="settings" class="nav-item">⚙　班級設定</button></nav><div class="side-bottom"><img src="https://i.postimg.cc/yxTzvDW2/gong-yong-01-04ji-xing-ya-bao-bao-v01.png" alt="共用初生精靈星芽寶寶"><p>每一份努力<br>都值得被看見。</p><span class="version">v19 · 星座精靈養成</span></div></aside>
 <div class="workspace"><header class="topbar"><span id="classLabel">星光示範班</span><div class="header-actions"><span id="syncStatus" role="status">示範模式</span><button id="login" class="button small">Google 登入雲端</button><button id="demo" class="button small ghost">示範模式</button></div></header>
@@ -262,7 +262,7 @@ body[data-view=points] .batch-bar input{min-height:25px;padding:3px}
 <div class="roster-toolbar"><div class="segmented" id="creditMode"><button data-kind="green" class="active">● 綠燈點</button><button data-kind="reward">✦ 獎勵點</button></div><p id="creditHint">3 個綠燈，自動換成 1 個獎勵點</p><label class="search">⌕ <input id="search" placeholder="搜尋座號或姓名" aria-label="搜尋學生"></label></div>
 <div class="list-heading magic-selection"><button id="toggleBatch" class="button small">☑ 批次選取</button><label><input type="checkbox" id="selectAll"> 全選</label><button id="clearSelection" class="text-button">全部取消</button><button id="invertSelection" class="text-button">反選</button><div id="familyButtons" class="family-buttons"></div><button id="editFamilies" class="text-button">⚙ 編輯分家</button><button id="undo" class="text-button" disabled>↶ 復原</button></div><div id="studentGrid" class="student-grid"></div><div id="pointsPager" class="pager"></div></section>
 <section id="petsView" class="view" hidden><div class="pet-banner"><div><span class="eyebrow">每週的精靈時光</span><h2>看看，我們又長大了！</h2><p>5 級選星座，此後每 5 級換新造型。點選夥伴，觀看成長與進入召喚。</p></div><button id="fullScreen" class="button ghost">⛶ 大螢幕展示</button></div><div id="petGrid" class="student-grid showcase"></div><div id="petsPager" class="pager"></div></section>
-<section id="rankingView" class="view" hidden><p class="help">獎勵榜沿用排行榜版起的登記紀錄。3 個綠燈折算 1 獎勵點，未滿 3 個綠燈按比例計入。老師加扣點會影響獎勵榜，抽卡花費和抽中的成長點不影響獎勵榜。寵物榜加總目前已領養寵物的成長點，包含抽中後已入帳的成長點。</p><div class="pager" aria-label="排行榜分頁"><button id="rankingPrev" class="button small ghost" data-page="ranking" data-delta="-1" disabled>◀ 上一頁</button><span id="rankingPageStatus" aria-live="polite"></span><button id="rankingNext" class="button small ghost" data-page="ranking" data-delta="1" disabled>下一頁 ▶</button></div><div class="ranking-grid"><article class="panel"><h2>獎勵排行榜</h2><div id="rewardRanking"></div></article><article class="panel"><h2>寵物排行榜</h2><div id="petRanking"></div></article></div></section><section id="historyView" class="view" hidden><div class="section-top"><h2>最近的班級紀錄</h2><span>保留最近 300 筆操作</span></div><div id="historyList" class="history-list"></div><div id="historyPager" class="pager"></div></section>
+<section id="rankingView" class="view" hidden><p class="help">獎勵榜沿用排行榜版起的登記紀錄。3 個綠燈折算 1 獎勵點，未滿 3 個綠燈按比例計入。老師加扣點會影響獎勵榜，抽卡花費和抽中的成長點不影響獎勵榜。寵物榜加總目前已領養寵物的成長點，包含抽中後已入帳的成長點。</p><div class="pager" aria-label="排行榜分頁"><button id="rankingPrev" class="button small ghost" data-page="ranking" data-delta="-1" disabled>◀ 上一頁</button><span id="rankingPageStatus" aria-live="polite"></span><button id="rankingNext" class="button small ghost" data-page="ranking" data-delta="1" disabled>下一頁 ▶</button><button id="editRankingBase" class="button small ghost" disabled>補登舊點數</button><button id="batchRankingBase" class="button small ghost" disabled>全班一鍵補登</button></div><div class="ranking-grid"><article class="panel"><h2>獎勵排行榜</h2><div id="rewardRanking"></div></article><article class="panel"><h2>寵物排行榜</h2><div id="petRanking"></div></article></div></section><section id="historyView" class="view" hidden><div class="section-top"><h2>最近的班級紀錄</h2><span>保留最近 300 筆操作</span></div><div id="historyList" class="history-list"></div><div id="historyPager" class="pager"></div></section>
 <section id="settingsView" class="view" hidden><div id="settingsTabs" class="pager"></div><div class="settings-grid"><article class="panel"><h2>班級與成長速度</h2><label>班級名稱<input id="className" maxlength="40"></label><label>每升一級需要幾個成長點？<input id="xpPerLevel" type="number" min="1" max="100" value="5"></label><p class="help">1綠燈＝1成長點；3綠燈換1獎勵點。直接加1獎勵點也增加3成長點。預設每級5成長點，可依實際速度調整。</p><div class="button-row"><button id="saveSettings" class="button">儲存設定</button><button id="reviewGrowth" class="button ghost">核對舊成長</button><button id="applyClassRoster" class="button ghost">套用29人與六家</button></div></article>
 <article class="panel"><h2>雲端與備份</h2><p id="cloudInfo">示範模式：本機練習資料</p><p class="help">正式資料需登入 Google，雲端提交成功才完成記點。離線時暫停正式寫入；同時開啟不同裝置會同步最新紀錄。</p><div class="button-row"><button id="backup" class="button">↓ 下載完整備份</button><button id="importBackup" class="button ghost">↑ 還原備份</button></div><p class="help">備份包含學生、點數、星座、技能、卡池及紀錄。精靈圖片隨本版素材附帶。還原前會先下載目前資料的備份。</p><input type="file" id="backupFile" accept="application/json,.json" hidden></article>
 <article class="panel"><h2>召喚卡池</h2><p>沿用你的 23 張預設卡片與原召喚介面。</p><button id="managePool" class="button ghost">管理卡池／機率</button><p class="help">單抽 3 點、三抽 9 點、十連抽 30 點。十連第十張保底史詩以上；卡池與機率編輯會同步到班級。</p></article>
@@ -746,7 +746,8 @@ function petStudent(s,p){return {...s,...p,id:s.id,activePetId:p.id};}
 function readyPets(s,settings,time=Date.now()){return petList(s).filter(p=>skill(petStudent(s,p),settings,time).available);}
 function dayKey(time=Date.now()){return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(time));}
 function isAbsent(st,s,time=Date.now()){return st.attendance?.date===dayKey(time)&&st.attendance.absentIds.includes(typeof s==='string'?s:s.id);}
-function growthTotal(s){return petList(s).reduce((n,p)=>n+p.growth,0)+(s.growthReserve||0);}
+function petGrowthTotal(s){return petList(s).reduce((n,p)=>n+p.growth,0);}
+function growthTotal(s){return petGrowthTotal(s)+(s.growthReserve||0);}
 function normalizeGrowth(s,settings){ensurePets(s);savePet(s);const first=s.pets[0],cap=29*settings.xpPerLevel,extra=Math.max(0,first.growth-cap);first.growth-=extra;s.growthReserve=(s.growthReserve||0)+extra;if(s.pets[1]){s.pets[1].growth+=s.growthReserve;s.growthReserve=0;}const active=s.pets.find(p=>p.id===s.activePetId);PET_FIELDS.forEach(k=>s[k]=active[k]);}
 function adjustGrowth(s,delta,settings){normalizeGrowth(s,settings);if(delta>=0){const first=s.pets[0],add=Math.min(delta,Math.max(0,29*settings.xpPerLevel-first.growth));first.growth+=add;delta-=add;if(s.pets[1])s.pets[1].growth+=delta;else s.growthReserve+=delta;}else{let left=-delta;if(growthTotal(s)<left)fail(s.name+'成長值不足以更正');const bank=Math.min(left,s.growthReserve);s.growthReserve-=bank;left-=bank;for(let i=s.pets.length-1;i>=0&&left;i--){const take=Math.min(left,s.pets[i].growth);s.pets[i].growth-=take;left-=take;}}const active=s.pets.find(p=>p.id===s.activePetId);PET_FIELDS.forEach(k=>s[k]=active[k]);}
 function eligibleNumbers(st,c,time=Date.now(),used=[]){const excluded=new Set(String((c.skipStr||'')+','+(c.absentStr||'')).split(/[\s,，、]+/).filter(Boolean).map(Number)),seen=new Set(used);return st.students.filter(s=>s.no>=c.start&&s.no<=c.end&&!excluded.has(s.no)&&!isAbsent(st,s,time)&&(c.repeat||!seen.has(s.no))).map(s=>s.no);}
@@ -802,11 +803,17 @@ function aura(lv){
  const rgb=[1,3,5].map(i=>Math.round(parseInt(from.slice(i,i+2),16)*(1-progress)+parseInt(to.slice(i,i+2),16)*progress));
  return {tier,key,name,progress,rgb:rgb.join(','),opacity:tier?.18+progress*.24:0};
 }
+function validateRankingBase(base){
+ if(!base||typeof base!=='object'||Array.isArray(base))fail('舊點數格式不符');
+ int(base.green,-1e7,1e7,'舊綠燈');
+ int(base.reward,-1e7,1e7,'舊獎勵點');
+}
 function validate(st){
  if(!st||st.schema!==1||!Array.isArray(st.students)||st.students.length>100)fail('不是支援的班級備份格式');
  int(st.revision,0,1e9,'版本');safeText(st.className,40,'班級名稱');if(!st.settings)fail('缺少設定');int(st.settings.xpPerLevel,1,100,'升級需求');poolValidate(st.pool);
  const ids=new Set(),nos=new Set();
  for(const s of st.students){safeText(s.id,80,'學生代碼');safeText(s.name,40,'姓名');int(s.no,1,999,'座號');if(ids.has(s.id)||nos.has(s.no))fail('座號或學生代碼重複');ids.add(s.id);nos.add(s.no);
+  if(s.rankingBase!==undefined)validateRankingBase(s.rankingBase);
   if(s.ranking!==undefined){if(!s.ranking||typeof s.ranking!=='object'||Array.isArray(s.ranking))fail('排行榜資料格式不符');int(s.ranking.green,-Number.MAX_SAFE_INTEGER,Number.MAX_SAFE_INTEGER,'累計綠燈');int(s.ranking.reward,-Number.MAX_SAFE_INTEGER,Number.MAX_SAFE_INTEGER,'累計獎勵點');}
   if(s.growthReserve!==undefined)int(s.growthReserve,0,1e7,'預存成長');if(s.family!==undefined)int(s.family,0,6,'家族');int(s.green,0,2,'綠燈餘額');int(s.reward,0,1e6,'獎勵點');int(s.growth,0,1e7,'成長值');int(s.version,0,1e9,'學生版本');int(s.earthCharge,0,100000,'保底能量');if(s.sign&&!SIGNS.includes(s.sign))fail('星座格式不符');safeText(s.skillWeek,20,'技能週次');
   if(s.pets){if(!Array.isArray(s.pets)||s.pets.length<1||s.pets.length>2||new Set(s.pets.map(p=>p.id)).size!==s.pets.length)fail('寵物資料不符');const active=s.pets.find(p=>p.id===s.activePetId);if(!active)fail('目前寵物不符');for(const p of s.pets){safeText(p.id,100,'寵物代碼');int(p.growth,0,1e7,'寵物成長');int(p.earthCharge,0,100000,'寵物能量');safeText(p.skillWeek,20,'寵物技能週次');if(p.sign&&!SIGNS.includes(p.sign))fail('寵物星座不符');}if(PET_FIELDS.some(k=>s[k]!==active[k]))fail('目前寵物資料不一致');}
@@ -819,6 +826,7 @@ function validate(st){
    if(d.pending){const p=d.pending;if(!['風','水'].includes(p.type)||!Array.isArray(p.choices)||p.choices.length<2||p.choices.length>4)fail('待完成技能格式不符');int(p.cursor,0,p.choices.length-1,'候選位置');p.choices.forEach(c=>{if(!c||!RARITIES.includes(c.rarity))fail('候選卡格式不符');safeText(c.name,80,'候選卡');url(c.imageUrl||'');});}
   }
  }
+ if(st.rankingBatchAt!==undefined)int(st.rankingBatchAt,0,9e15,'排行榜批次補登時間');
  if(st.attendance){if(!/^\d{4}-\d{2}-\d{2}$/.test(st.attendance.date)||!Array.isArray(st.attendance.absentIds)||st.attendance.absentIds.length>100||new Set(st.attendance.absentIds).size!==st.attendance.absentIds.length||st.attendance.absentIds.some(id=>!ids.has(id)))fail('請假名單格式不符');}
  if(st.removedStudents!==undefined){if(!Array.isArray(st.removedStudents)||st.removedStudents.length>100)fail('已移除名單格式不符');const allIds=new Set(ids);for(const s of st.removedStudents){if(allIds.has(s.id))fail('已移除學生代碼重複');allIds.add(s.id);validate({...st,students:[s],removedStudents:undefined,attendance:undefined});}}
  if(!Array.isArray(st.logs)||st.logs.length>300||!Array.isArray(st.opIds)||st.opIds.length>800)fail('操作紀錄格式不符');
@@ -872,7 +880,7 @@ function apply(input,op){
   if(op.expectedRevision!==st.revision)fail('班級資料已有更新，請重新下載備份後再重置');if(op.confirm!==(op.type==='reset-semester'?'重置學期':'更換班級'))fail('請輸入正確的重置確認文字');
   delete st.attendance;if(op.type==='reset-semester'){if(st.removedStudents)st.removedStudents=st.removedStudents.map(s=>({...student(s.id,s.no,s.name),family:s.family||0,version:s.version+1}));st.students=st.students.map(s=>({...student(s.id,s.no,s.name),family:s.family||0,version:s.version+1}));message='重置學期：保留座號姓名與分家，點數及寵物歸零';}
   else{st.students=[];st.removedStudents=[];st.className=String(op.className||'新的班級').trim().slice(0,40)||'新的班級';st.rosterPresetDisabled=true;message='更換班級：清空全部學生名單、點數與寵物';}
-  st.logs=[];delete st.growthMigration;if(st.tools?.lottery)delete st.tools.lottery;st.undo=null;
+  st.logs=[];delete st.growthMigration;delete st.rankingBatchAt;if(st.tools?.lottery)delete st.tools.lottery;st.undo=null;
  }else if(op.type==='growth-correction'){const s=find(op.studentId),selectedBefore=s.activePetId;if(op.petId)selectPet(s,op.petId);int(op.growth,0,1e7,'成長值');const before=s.growth;if(s.pets.length===1)s.growthReserve=0;s.growth=op.growth;s.version++;const row=st.growthMigration?.rows.find(r=>r.id===s.id);if(row)row.reviewed=true;message=s.name+' 核對成長 '+before+' → '+s.growth;if(op.petId&&selectedBefore!==s.activePetId)selectPet(s,selectedBefore);
  normalizeGrowth(s,st.settings);
  }else if(op.type==='attendance'){if(op.date!==dayKey(op.time))fail('日期已變更，請重新開啟今日請假');if(!Array.isArray(op.absentIds)||new Set(op.absentIds).size!==op.absentIds.length)fail('請假名單不符');op.absentIds.forEach(find);st.attendance={date:op.date,absentIds:clone(op.absentIds)};message='更新今日請假：'+op.absentIds.length+'人';
@@ -886,6 +894,26 @@ function apply(input,op){
   if(!Array.isArray(op.rows)||!op.rows.length||op.rows.length>100)fail('請輸入1～100位學生');
   const existing=new Set(st.students.map(s=>s.no));
   op.rows.forEach((r,i)=>{int(r.no,1,999,'座號');safeText(r.name,40,'姓名');if(!r.name.trim()||existing.has(r.no))fail('姓名空白或座號重複：'+r.no);existing.add(r.no);st.students.push(student(op.id+'-'+i,r.no,r.name.trim()));});message='新增 '+op.rows.length+' 位學生';
+ }else if(op.type==='ranking-base-batch'){
+  if(st.rankingBatchAt!==undefined)fail('這個班級已做過一鍵補登，請使用個別調整');
+  if(op.expectedRevision!==st.revision)fail('班級資料已有更新，請重新開啟補登確認');
+  if(!st.students.length)fail('班級目前沒有學生');
+  for(const s of st.students){
+   const current=BigInt(s.ranking?.reward??0)*3n+BigInt(s.ranking?.green??0);
+   const units=BigInt(petGrowthTotal(s))-current;
+   const base={green:Number(units%3n),reward:Number(units/3n)};
+   validateRankingBase(base);
+   if(base.green||base.reward)s.rankingBase=base;else delete s.rankingBase;
+  }
+  st.rankingBatchAt=op.time;st.undo=previousUndo;
+  message='依寵物成長點一次補登全班獎勵排行榜 · '+st.students.length+'人';
+ }else if(op.type==='ranking-base'){
+  const s=find(op.studentId),base={green:op.green,reward:op.reward};
+  validateRankingBase(base);
+  if(base.green||base.reward)s.rankingBase=base;else delete s.rankingBase;
+  st.undo=previousUndo;
+  message=s.no+'號 '+s.name+' 更新獎勵排行榜的舊點數';
+  detail='舊綠燈 '+base.green+'，舊獎勵點 '+base.reward;
  }else if(op.type==='credit'){
   int(op.amount,-10000,10000,'調整數量');if(!op.amount||!['green','reward'].includes(op.kind)||!Array.isArray(op.ids)||!op.ids.length||new Set(op.ids).size!==op.ids.length)fail('請選學生並輸入非零整數');
   op.ids.forEach(find);const recipients=op.ids.filter(id=>op.amount<0||!isAbsent(st,id,op.time));if(!recipients.length)fail('選取學生今天皆請假，未加點');const before={};for(const id of recipients){const s=find(id);before[id]={green:s.green,reward:s.reward,growth:s.growth,pets:clone(s.pets),activePetId:s.activePetId,growthReserve:s.growthReserve||0,version:s.version,ranking:{green:0,reward:0,...s.ranking}};
@@ -921,11 +949,11 @@ function apply(input,op){
   else if(op.action==='reroll'){if(p.cursor+1>=p.choices.length)fail('重抽次數已用完');p.cursor++;d.results[0]=p.choices[p.cursor];if(p.cursor===p.choices.length-1)d.pending=null;}else fail('操作不符');
   if(!d.pending)s.earthCharge=Math.min(100000,s.earthCharge+d.results.filter(c=>c.rarity==='普通').length);settlePetRewards(s,d,st.settings);s.version++;message=s.name+(d.pending?' 使用一次重抽':' 完成抽卡技能');
  }else if(op.type==='restore'){
-  const restored=validate(migrate(op.state));restored.revision=st.revision;restored.opIds=st.opIds;restored.undo=null;Object.assign(st,restored);message='由備份還原整個班級';
+  const restored=validate(migrate(op.state));restored.revision=st.revision;restored.opIds=st.opIds;restored.undo=null;delete st.rankingBatchAt;Object.assign(st,restored);message='由備份還原整個班級';
  }else fail('不支援的操作');
  st.students.forEach(savePet);st.students.sort((a,b)=>a.no-b.no);st.revision++;st.opIds=[op.id,...st.opIds].slice(0,800);st.logs.unshift({id:op.id,time:op.time,message,detail});st.logs=st.logs.slice(0,300);return validate(st);
 }
-return {SIGNS,ELEMENTS,RARITIES,CLASS_NAMES,CLASS_FAMILIES,clone,dayKey,isAbsent,growthTotal,eligibleNumbers,petList,petStudent,readyPets,initial,classroom,migrate,validate,poolValidate,level,experience,aura,stage,element,skill,weekKey,apply,drawOne,modeFor,rng};
+return {SIGNS,ELEMENTS,RARITIES,CLASS_NAMES,CLASS_FAMILIES,clone,dayKey,isAbsent,growthTotal,petGrowthTotal,eligibleNumbers,petList,petStudent,readyPets,initial,classroom,migrate,validate,poolValidate,level,experience,aura,stage,element,skill,weekKey,apply,drawOne,modeFor,rng};
 });
 
 
@@ -951,7 +979,11 @@ function status(){
  let note=mode==='demo'?'示範資料僅保存在這台瀏覽器。登入後會載入你的正式班級，不會自動上傳示範資料。':mode==='cloud-loading'?'正在載入正式班級，請稍候。':mode==='cloud'?(cloudError?'雲端尚未可用：'+cloudError+'。請確認 Firebase 登入、授權網域與 Firestore 規則。':!navigator.onLine?'目前離線：顯示最後已載入資料，暫停新增與抽卡；恢復連線並同步後再繼續。':cloudReady?'正式雲端班級 · 每次記點與抽卡都在伺服器確認後完成。':'正在向伺服器核對資料，暫停寫入。'):'目前未登入，正式班級暫停寫入。';
  if(!storageOK&&mode==='demo')note='無法保存本機示範資料，已暫停變更。請下載備份後檢查瀏覽器儲存空間。';
  $('notice').textContent=note;$('notice').classList.toggle('error',!!cloudError||!storageOK);
- $('addStudents').disabled=!canWrite();$('credit').disabled=!canWrite()||!selected.size;$('deduct').disabled=!canWrite()||!selected.size;$('undo').disabled=!canWrite()||!state.undo;$('saveSettings').disabled=!canWrite();$('managePool').disabled=!canWrite();$('importBackup').disabled=!canWrite();document.querySelectorAll('[data-quick],[data-confirm-sign],[data-choose],#saveRoster,#confirmDeduct,#confirmRestore').forEach(b=>b.disabled=!canWrite());
+ $('editRankingBase').disabled=!canWrite()||!state.students.length;
+ const batchDone=state.rankingBatchAt!==undefined;
+ $('batchRankingBase').disabled=batchDone||!canWrite()||!state.students.length;
+ $('batchRankingBase').textContent=batchDone?'全班已補登':'全班一鍵補登';
+ $('addStudents').disabled=!canWrite();$('credit').disabled=!canWrite()||!selected.size;$('deduct').disabled=!canWrite()||!selected.size;$('undo').disabled=!canWrite()||!state.undo;$('saveSettings').disabled=!canWrite();$('managePool').disabled=!canWrite();$('importBackup').disabled=!canWrite();document.querySelectorAll('[data-quick],[data-confirm-sign],[data-choose],#saveRoster,#confirmDeduct,#confirmRestore,#saveRankingBase,#confirmRankingBatch').forEach(b=>b.disabled=!canWrite());
 }
 async function mutate(type,data={}){
  if(!canWrite()){toast('目前無法寫入，請等同步完成或切到示範模式。',true);return null;}
@@ -977,7 +1009,9 @@ function card(s,showcase=false){
 }
 let page=0,petPage=0,historyPage=0,rankingPage=0;const pageSize=()=>Math.max(29,state.students.length);
 function rewardRankingUnits(student){
- return BigInt(student.ranking?.reward??0)*3n+BigInt(student.ranking?.green??0);
+ const reward=BigInt(student.ranking?.reward??0)+BigInt(student.rankingBase?.reward??0);
+ const green=BigInt(student.ranking?.green??0)+BigInt(student.rankingBase?.green??0);
+ return reward*3n+green;
 }
 function formatRewardRanking(units){
  const absolute=units<0n?-units:units,whole=absolute/3n,fraction=['','⅓','⅔'][Number(absolute%3n)];
@@ -1005,7 +1039,7 @@ function rankingPageSize(availableHeight, panelHeights, rowHeight, gap, stacked)
 }
 function renderRankingPage(){
  const reward=rankedStudents(rewardRankingUnits);
- const pets=rankedStudents(student=>E.petList(student).reduce((total,pet)=>total+pet.growth,0));
+ const pets=rankedStudents(E.petGrowthTotal);
  const rewardNode=$('rewardRanking'),petNode=$('petRanking');
  const showRows=(start,end)=>{
   rewardNode.innerHTML=renderRanking(reward.slice(start,end),formatRewardRanking);
@@ -1039,6 +1073,39 @@ function render(){
 }
 function showView(next){if(next==='lottery'||next==='quiet'){showTool(next);return;}$('toolsView').hidden=true;if(view==='quiet'&&next!=='quiet')stopQuietTools();view=next;['points','pets','ranking','history','settings'].forEach(v=>$(v+'View').hidden=v!==next);document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===next));$('batchBar').hidden=next!=='points';const titles={points:['每一點努力，都會長成星光。','記下今天的好表現，陪孩子的小精靈一起長大。'],pets:['今天，來和精靈見面吧。','一起看看努力累積的變化，也為下一次進化許願。'],ranking:['班級累計排行榜','看看累計獎勵和寵物成長。'],history:['每一份努力，都有跡可循。','點數調整、抽卡與選擇，依時間記錄在這裡。'],settings:['為我們的班級，設定成長節奏。','調整升級需求、管理卡池，並定期下載完整備份。']};$('pageTitle').textContent=titles[next][0];$('pageSubtitle').textContent=titles[next][1];render();}
 function modal(html){$('dialogContent').innerHTML=html;if(!$('dialog').open)$('dialog').showModal();}
+function confirmRankingBatch(){
+ if(!canWrite()||!state.students.length||state.rankingBatchAt!==undefined)return;
+ const expectedRevision=state.revision;
+ modal('<div class="dialog-body"><h2>全班一鍵補登</h2><p>將目前 '+state.students.length+' 位學生的獎勵榜分數設為當下的寵物成長點總和，每 3 成長點折算為 1 獎勵點。兩隻寵物會一起計算。</p><p class="help">這次會取代已手動填寫的舊補登值，並扣除新版已登記的榜分，避免重複計入。每班每學期可執行一次，之後仍可個別調整。這次操作不會更改綠燈、獎勵點餘額或寵物成長。</p><button id="confirmRankingBatch" class="button">確認補登全班</button></div>');
+ const confirm=$('confirmRankingBatch');
+ confirm.onclick=async()=>{
+  const result=await mutate('ranking-base-batch',{expectedRevision});
+  if(result&&confirm.isConnected){$('dialog').close();toast('已完成全班補登。');}
+ };
+}
+function editRankingBase(){
+ if(!canWrite()||!state.students.length)return;
+ const options=state.students.map(s=>'<option value="'+esc(s.id)+'">'+s.no+' 號 '+esc(s.name)+'</option>').join('');
+ modal('<form id="rankingBaseForm" class="dialog-body"><h2>補登獎勵排行榜的舊點數</h2><p class="help">填入開始使用排行榜以前的淨累計。先扣掉老師更正的點數，抽卡花費不必扣。獎勵點欄只填老師直接登記的獎勵點，綠燈換來的點數會由系統折算。</p><label>學生 <select id="rankingBaseStudent">'+options+'</select></label><div class="button-row"><label>舊綠燈 <input id="rankingBaseGreen" type="number" min="-10000000" max="10000000" step="1" required></label><label>舊獎勵點 <input id="rankingBaseReward" type="number" min="-10000000" max="10000000" step="1" required></label></div><p id="rankingBasePreview" class="help" aria-live="polite"></p><button id="saveRankingBase" type="submit" class="button">儲存舊點數</button></form>');
+ const form=$('rankingBaseForm'),select=$('rankingBaseStudent'),green=$('rankingBaseGreen'),reward=$('rankingBaseReward');
+ const preview=()=>{
+  const student=find(select.value);
+  if(!student||!green.validity.valid||!reward.validity.valid){$('rankingBasePreview').textContent='請填入有效的整數。';return;}
+  const rankingBase={green:green.valueAsNumber,reward:reward.valueAsNumber};
+  $('rankingBasePreview').textContent='新版已累計 '+formatRewardRanking(rewardRankingUnits({...student,rankingBase:null}))+'，儲存後榜分 '+formatRewardRanking(rewardRankingUnits({...student,rankingBase}))+'。';
+ };
+ select.onchange=()=>{
+  const base=find(select.value)?.rankingBase;
+  green.value=base?.green??0;reward.value=base?.reward??0;preview();
+ };
+ green.oninput=reward.oninput=preview;
+ select.onchange();
+ form.onsubmit=async event=>{
+  event.preventDefault();
+  const result=await mutate('ranking-base',{studentId:select.value,green:green.valueAsNumber,reward:reward.valueAsNumber});
+  if(result&&form.isConnected){$('dialog').close();toast('已儲存舊點數。');}
+ };
+}
 function find(id){return state.students.find(s=>s.id===id);}
 function mini(c){return `<div class="mini-card">${c.imageUrl?`<img src="${esc(c.imageUrl)}" alt="${esc(c.name)}" loading="lazy" onerror="this.hidden=true">`:''}<small>${esc(c.rarity)}</small><strong>${esc(c.icon||'✦')} ${esc(c.name)}</strong><small>${esc(c.desc||'')}</small></div>`;}
 function detail(id){
@@ -1057,6 +1124,8 @@ function openSummon(id=null){if($('dialog').open)$('dialog').close();summonStude
 document.addEventListener('click',async event=>{
  const b=event.target.closest('button');if(!b)return;
  if(b.dataset.view)return showView(b.dataset.view);
+ if(b.id==='editRankingBase')return editRankingBase();
+ if(b.id==='batchRankingBase')return confirmRankingBatch();
  if(b.dataset.kind){creditKind=b.dataset.kind;document.querySelectorAll('[data-kind]').forEach(x=>x.classList.toggle('active',x.dataset.kind===creditKind));return render();}
  if(b.dataset.quick){const op=await mutate('credit',{ids:[b.dataset.quick],kind:creditKind,amount:1,note:'快速記點'});if(op)toast('已存入1'+(creditKind==='green'?'個綠燈':'個獎勵點'));return;}
  if(b.dataset.detail)return detail(b.dataset.detail);
